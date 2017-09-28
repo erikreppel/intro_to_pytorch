@@ -27,6 +27,24 @@ To deactivate
 source deactivate ml
 ```
 
+If you're on Windows or MacOS it might be easiest to run in Docker, conda is not always portable based on package version numbers.
+
+```
+$ docker-compose build
+$ docker-compose up
+...
+jupyter_1  |     Copy/paste this URL into your browser when you connect for the first time,
+jupyter_1  |     to login with a token:
+jupyter_1  |         http://localhost:8888/?token=00d56f0815766c1ee3dcbc0e0322894cfcc166556d6310ae
+jupyter_1  | [I 20:36:45.808 NotebookApp] 302 GET /?token=00d56f0815766c1ee3dcbc0e0322894cfcc166556d6310ae (172.20.0.1) 0.68ms
+jupyter_1  | [I 20:36:59.638 NotebookApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+jupyter_1  | [W 20:36:59.639 NotebookApp] Notebook 2_creating_models.ipynb is not trusted
+jupyter_1  | [I 20:37:00.107 NotebookApp] Kernel started: 22ffa729-38e5-48be-8c60-a713a361fe6a
+jupyter_1  | [I 20:37:00.735 NotebookApp] Adapting to protocol v5.1 for kernel 22ffa729-38e5-48be-8c60-a713a361fe6a
+```
+
+Open the link with the token to auth Jupyter notebook.
+
 If you have a computer with an Nvidia GPU you may want to setup GPU acceleration. A good tutorial can be found [here](https://medium.com/@vivek.yadav/deep-learning-setup-for-ubuntu-16-04-tensorflow-1-2-keras-opencv3-python3-cuda8-and-cudnn5-1-324438dd46f0)
 
 ## Data
