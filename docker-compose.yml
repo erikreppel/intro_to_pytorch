@@ -4,7 +4,4 @@ services:
     build: .
     ports:
      - "8888:8888"
-    # environment:
-    #   - PATH=/opt/conda/envs/ml/bin:$PATH:/opt/conda/bin
     entrypoint: ['/bin/bash', '-c', 'source activate ml && jupyter notebook /work --ip=* --no-browser --allow-root']
-    # entrypoint: ["/bin/bash -c", "source activate ml"]
