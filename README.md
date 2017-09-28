@@ -55,3 +55,5 @@ Times are for 5 training epochs of Fashion MNIST
 |128|1024|49.248 |5.827  |
 |256|2048|66.144 |4.066  |
 |max|2048|28.104 |2.389  |
+
+### Note: the version of `experiment.py` that I keep up to date can be found [here](https://github.com/erikreppel/PyTorch-tools)
